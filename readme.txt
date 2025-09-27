@@ -1,57 +1,55 @@
-=== Gateway Order Manager ===
+=== Telegram Bot Notification Pro ===
 Contributors: Refat Rahman
 Donate link: https://refat.ovh/donate
-Tags: gateway, payment gateway, order, checkout, drag and drop
+Tags: notification, bot notification, admin notification, telegram
 Requires at least: 1.0.0
 Tested up to: 1.0.0
-Stable tag: 1.0
-License: GPLv2 or later
+Stable tag: 2.1.1
+License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-A simple yet powerful plugin for PipraPay that allows administrators to manage the display order of payment gateways on the checkout page using an intuitive drag-and-drop interface. The custom order is seamlessly reflected on the public-facing payment page, giving you full control over the user's payment experience.
-
-
+An enhanced Telegram Bot Notification plugin for PipraPay that delivers real-time transaction alerts directly to your Telegram.
+This Pro version includes support for multiple chat IDs, granular notification controls, and a modern, user-friendly interface.
 **Key Features:**
-
-**Drag & Drop Interface**: Easily reorder payment gateways by dragging and dropping them in the desired sequence.
-
-**AJAX Powered**: The order is saved instantly in the background without needing a page refresh.
-
-**Automatic Frontend Sorting**: The plugin automatically applies the saved order to the payment gateways list on the public checkout page.
-
-**Seamless Integration**: Integrates directly into the PipraPay admin dashboard.
-
-**Lightweight**: Minimal code and no unnecessary features to slow down your site.
-
-**Easy to Use**: No complex configuration is required. Just activate, and you're ready to organize your gateways.
+* **Easy Bot Setup**: Connect your Telegram bot by simply pasting the token.
+* **Multiple Chat IDs**: Send notifications to multiple users or channels.
+* **Granular Controls**: Enable or disable notifications for pending, completed, and failed payments.
+* **Interactive Pending Confirmation**: Approve pending transactions directly from Telegram with a confirmation button.
+* **Global Toggle**: Easily enable or disable the entire notification system.
+* **Interactive Bot Commands**: Get real-time sales and transaction data directly from your bot.
+* **User-Friendly Interface**: Modern and intuitive settings page.
 
 == Installation ==
+1.  Download the plugin.
+2.  Upload the plugin folder to your PipraPay `Plugin` section.
+3.  Activate the plugin from PipraPay's module settings.
+4.  Go to **Admin Dashboard → Module → Telegram Bot Notification Pro**.
+5.  Follow the on-screen instructions to set up your bot and chat IDs.
 
-Download the plugin.
-
-Upload the plugin folder to your PipraPay Plugin section (/pp-content/plugins/modules/).
-
-Activate the plugin from PipraPay's module settings.
-
-Go to Admin Dashboard → Module → Gateway Order Manager.
-
-Drag and drop the gateways into your preferred order and click "Save Order".
+== Bot Commands ==
+You can use the following commands in your Telegram chat with the bot:
+* `/start` - Get your Chat ID.
+* `/last_transaction` - Get details of the most recent transaction.
+* `/sales_today` - Get the total sales amount for today.
+* `/sales_yesterday` - Get the total sales amount for yesterday.
+* `/sales_this_month` - Get the total sales amount for the current month.
+* `/pending_transactions` - Get a count of pending transactions.
+* `/failed_transactions` - Get a count of failed transactions.
+* `/completed_transactions` - Get a count of completed transactions.
+* `/help` - Show all the available commands.
 
 == Changelog ==
 
-= 1.2 =
-* Replaced frontend AJAX call with a server-side data injection.
-* Implemented `MutationObserver` for instant, flicker-free reordering of gateways.
+= 2.1.0 =
+* Added interactive "Confirm Transaction" button for pending notifications.
+* Added a setting to enable/disable the confirmation button feature.
 
-
-= 1.0 =
-
-*Initial release of the plugin.
-
-*Added a drag-and-drop interface for sorting active payment gateways.
-
-*Implemented AJAX saving for the gateway order.
-
-*Added frontend JavaScript to reorder gateways for public users.
+= 2.0.0 =
+* Complete overhaul of the plugin
+* Added support for multiple chat IDs
+* Added granular notification controls
+* Added interactive bot commands for sales and transaction data.
+* Redesigned the admin interface
+* Improved user experience

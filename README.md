@@ -1,8 +1,8 @@
-# 💳 Gateway Order Manager for PipraPay
+# 🤖 Telegram Bot Notification Pro for PipraPay
 
-**Plugin Name:** Gateway Order Manager  
-**Description:** Manage the display order of payment gateways using drag and drop.  
-**Version:** 1.2 
+**Plugin Name:** Telegram Bot Notification Pro  
+**Description:** An enhanced Telegram Bot Notification plugin for PipraPay that delivers real-time transaction alerts directly to your Telegram.  
+**Version:** 2.1.1  
 **Author:** [Refat Rahman](https://github.com/refatbd)  
 **License:** [GPL-2.0+](https://www.gnu.org/licenses/gpl-2.0.html)  
 **Requires at least PipraPay version:** 1.0.0  
@@ -13,39 +13,62 @@
 
 ## 📌 Key Features
 
--   **Drag & Drop Interface**: Easily reorder payment gateways by dragging and dropping them in the desired sequence.
--   **AJAX Powered Saving**: The order is saved instantly in the background without needing a page refresh.
--   **Instant Frontend Sorting**: The plugin uses an optimized script to apply the saved order instantly on the public checkout page, eliminating any "flickering".
--   **Seamless Integration**: Integrates directly into the PipraPay admin dashboard.
--   **Lightweight**: Minimal code and no unnecessary features to slow down your site.
--   **Easy to Use**: No complex configuration is required. Just activate, and you're ready to organize your gateways.
+-   **Easy Bot Setup**: Connect your bot instantly by pasting the token.
+-   **Multiple Chat IDs**: Send notifications to multiple users, groups, or channels.
+-   **Granular Controls**: Toggle notifications for pending, completed, and failed payments.
+-   **Interactive Pending Confirmation**: Approve pending transactions directly from Telegram with a confirmation button.
+-   **Global Toggle**: Easily enable or disable the entire notification system with one click.
+-   **Interactive Bot Commands**: Get real-time sales and transaction data directly from your bot.
+-   **User-Friendly Interface**: A modern and intuitive settings page for easy management.
 
 ---
 
 ## 🎯 Why Use This Plugin?
 
--   **Control Checkout Flow**: Prioritize and arrange payment gateways to guide customers towards your preferred payment methods.
--   **Improved User Experience**: Present payment options in a logical and organized manner on the checkout page without any visual delay.
--   **Effortless Management**: Save time with a simple and intuitive drag-and-drop interface for managing gateway order.
--   **Instant Updates**: Changes are reflected immediately on the frontend.
+-   **Stay Instantly Informed**: Get real-time alerts for every transaction, so you never miss an update.
+-   **Centralize Notifications**: Keep your entire team in the loop by sending alerts to multiple chats.
+-   **Gain Actionable Insights**: Use interactive bot commands to quickly check sales and transaction stats on the go.
+-   **Reduce Administrative Work**: Automate your transaction monitoring and save valuable time.
 
 ---
 
 ## 📥 Installation
 
 1.  **Download** the plugin from the repository.
-2.  **Upload** the `gateway-manager` folder to your PipraPay `Plugin` section (`/pp-content/plugins/modules/`).
+2.  **Upload** the plugin folder to your PipraPay `Plugin` section.
 3.  **Activate** the plugin from PipraPay's module settings.
-4.  Go to **Admin Dashboard → Module → Gateway Order Manager**.
-5.  Drag and drop the gateways into your preferred order and click "Save Order".
+4.  Go to **Admin Dashboard → Module → Telegram Bot Notification Pro**.
+5.  Follow the on-screen instructions to connect your bot and configure your settings.
 
 ---
 
-## 📜 Changelog
+## 🤖 Bot Commands
 
-### [1.2]
-- Replaced frontend AJAX call with a server-side data injection.
-- Implemented `MutationObserver` for instant, flicker-free reordering of gateways.
+Interact with your bot on Telegram using these commands:
 
-### [1.0]
-- Initial release.
+-   `/start` - Get your Chat ID.
+-   `/last_transaction` - See details of the most recent transaction.
+-   `/sales_today` - Check the total sales amount for today.
+-   `/sales_yesterday` - Check the total sales amount for yesterday.
+-   `/sales_this_month` - Check the total sales amount for the current month.
+-   `/pending_transactions` - Get a count of all pending transactions.
+-   `/failed_transactions` - Get a count of all failed transactions.
+-   `/completed_transactions` - Get a count of all completed transactions.
+-   `/help` - Show all available commands.
+
+---
+
+## 📝 Changelog
+
+### 2.1.0
+-   Added interactive "Confirm Transaction" button for pending notifications.
+-   Added a setting to enable/disable the confirmation button feature.
+
+### 2.0.0
+
+-   Complete overhaul of the plugin
+-   Added support for multiple chat IDs
+-   Added granular notification controls
+-   Added interactive bot commands for sales and transaction data
+-   Redesigned the admin interface
+-   Improved user experience
