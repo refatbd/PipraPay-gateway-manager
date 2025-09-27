@@ -1,6 +1,6 @@
 {
-  "type": "plugins",
-  "slug": "telegram-bot-notification-pro",
-  "name": "Telegram Bot Notification Pro",
-  "mrdr": "modules"
+    "type": "plugins",
+    "slug": "gateway-manager",
+	"name": "Manage Gateway Order",
+    "mrdr": "modules"
 }

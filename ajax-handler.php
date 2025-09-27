@@ -15,6 +15,11 @@ if (file_exists(__DIR__ . '/../../../../pp-include/pp-controller.php')) {
     die('Controller file not found.');
 }
 
+if (file_exists(__DIR__ . '/functions.php')) {
+    require_once __DIR__ . '/functions.php';
+}
+
+
 // Set header to output JSON
 header('Content-Type: application/json');
 
@@ -58,6 +63,24 @@ if (isset($_POST['action']) && $_POST['action'] === 'save_gateway_order') {
         echo json_encode(['status' => 'success', 'message' => 'Order saved successfully!']);
     } else {
         echo json_encode(['status' => 'error', 'message' => 'A database error occurred while saving the order.']);
+    }
+    exit;
+}
+
+if (isset($_POST['action']) && $_POST['action'] === 'check_for_updates') {
+    $update_info = gateway_manager_check_for_github_updates();
+    if ($update_info) {
+        echo json_encode([
+            'status' => true, 
+            'update_available' => true, 
+            'data' => $update_info
+        ]);
+    } else {
+        echo json_encode([
+            'status' => true, 
+            'update_available' => false, 
+            'message' => 'You are using the latest version of the plugin.'
+        ]);
     }
     exit;
 }

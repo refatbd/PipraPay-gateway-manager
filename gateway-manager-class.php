@@ -2,7 +2,7 @@
     $plugin_meta = [
     'Plugin Name'       => 'Gateway Order Manager',
     'Description'       => 'Manage the display order of payment gateways using drag and drop.',
-    'Version'           => '1.2',
+    'Version'           => '1.3',
     'Author'            => 'Refat Rahman',
     'Author URI'        => 'https://github.com/refatbd',
     'License'           => 'GPL-2.0+',
