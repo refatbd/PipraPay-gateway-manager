@@ -1,0 +1,6 @@
+{
+    "type": "plugins",
+    "slug": "gateway-manager",
+	"name": "Manage Gateway Order",
+    "mrdr": "modules"
+}
