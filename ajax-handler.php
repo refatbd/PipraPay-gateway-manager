@@ -1,7 +1,4 @@
 <?php
-// Define a constant to safely include core files
-define('pp_allowed_access', true);
-
 // Include the main configuration and controller files to access database functions
 if (file_exists(__DIR__ . '/../../../../pp-config.php')) {
     require_once __DIR__ . '/../../../../pp-config.php';
